@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll Animation</title>
+    <!-- Add AOS CSS and JS links -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .scroll-container {
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap; /* Ensures cards stay on one line */
+      }
+
+      .scroll-section {
+        flex: 0 0 auto;
+        width: 300px; /* Set the width of each skill card */
+        margin-right: 20px; /* Adjust the margin between cards */
+      }
+
+      .card {
+        background-color: #343a40; /* Your desired background color */
+        color: #fff; /* Your desired text color */
+        border-radius: 8px;
+        padding: 20px;
+        margin: 20px 0;
+        text-align: center;
+        display: inline-block; /* Ensures cards stay on one line */
+      }
+
+      .percentage {
+        height: 1px; /* Adjust the height of the progress bar */
+        background-color: #cb6699; /* Your desired color */
+        width: var(--percentage, 0%);
+      }
+
+      .astro-K6X7V7PE {
+        /* Add any additional styles for your icons or other elements */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="scroll-container">
+      <!-- Skill Card 1 -->
+      <div class="scroll-section" data-aos="zoom-in-up" data-aos-duration="500">
+        <div
+          class="card astro-K6X7V7PE aos-init aos-animate"
+          style="--percentage: 90%"
+        >
+          <div class="astro-K6X7V7PE">
+            <img
+              src="/icons/sass.svg"
+              alt=""
+              srcset=""
+              class="astro-AB4IHPZS"
+            />
+          </div>
+          <div class="text-black font-bold astro-K6X7V7PE">Sass</div>
+          <div class="h-1 percentage astro-K6X7V7PE"></div>
+        </div>
+      </div>
+
+      <!-- Skill Card 2 -->
+      <div class="scroll-section" data-aos="zoom-in-up" data-aos-duration="500">
+        <div
+          class="card astro-K6X7V7PE aos-init aos-animate"
+          style="--percentage: 90%"
+        >
+          <div class="astro-K6X7V7PE">
+            <img
+              src="/icons/sass.svg"
+              alt=""
+              srcset=""
+              class="astro-AB4IHPZS"
+            />
+          </div>
+          <div class="text-black font-bold astro-K6X7V7PE">Sass</div>
+          <div class="h-1 percentage astro-K6X7V7PE"></div>
+        </div>
+      </div>
+
+      <!-- Add more skill cards as needed -->
+
+      <!-- Skill Card 3 -->
+      <div class="scroll-section" data-aos="zoom-in-up" data-aos-duration="500">
+        <div
+          class="card astro-K6X7V7PE aos-init aos-animate"
+          style="--percentage: 90%"
+        >
+          <div class="astro-K6X7V7PE">
+            <img
+              src="/icons/sass.svg"
+              alt=""
+              srcset=""
+              class="astro-AB4IHPZS"
+            />
+          </div>
+          <div class="text-black font-bold astro-K6X7V7PE">Sass</div>
+          <div class="h-1 percentage astro-K6X7V7PE"></div>
+        </div>
+      </div>
+
+      <!-- Skill Card 4 -->
+      <div class="scroll-section" data-aos="zoom-in-up" data-aos-duration="500">
+        <div
+          class="card astro-K6X7V7PE aos-init aos-animate"
+          style="--percentage: 90%"
+        >
+          <div class="astro-K6X7V7PE">
+            <img
+              src="/icons/sass.svg"
+              alt=""
+              srcset=""
+              class="astro-AB4IHPZS"
+            />
+          </div>
+          <div class="text-black font-bold astro-K6X7V7PE">Sass</div>
+          <div class="h-1 percentage astro-K6X7V7PE"></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+  </body>
+</html>
